@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+
+/* HEADER */
+/* /////////////////////////////////////// */
+
+header{
+    background-color:#4157FE;
+    height: 100vh;
+    color:white;
+    font-family: "Graphik Bold", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    
+}
+
+
+header > * {
+    font-weight: 800;
+    margin: 0 auto;
+    max-width: 120rem;
+    padding:5rem 0;
+}
+
+
+header h1{
+    font-size: 7rem;
+    letter-spacing: -0.2rem;
+    cursor: pointer;
+}
+
+header p{
+    font-size: 9rem;
+    letter-spacing: -0.5rem;
+    word-spacing: -0.5rem;
+    line-height: 1;
+    
+    
+}
+
+header div{
+    font-size: 4rem;
+
+    
+}
+
+/* //////////////////////////////////////////////// */
+
+/* MAIN */
+
+/* ///////////////////////////////////////////////// */
+
+
+.hoverImages{
+    height:100vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+main .hoverImages .imageSelect{
+    align-self: center;
+    font-size: 5rem;
+}
+
+main .hoverImages .imageSelect .imageSelectItem a{
+    padding: 0.1rem;
+    font-family: "Graphik Bold", Helvetica, Arial, sans-serif;
+    color: rgb(218, 218, 218);
+    font-size: 7rem;
+    font-weight: 800;
+    letter-spacing: -0.3rem;
+    margin-right: 4rem;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+main .hoverImages .imageSelect .imageSelectItem a:hover{
+    color: black;
+    transition: all 1s;
+}
+
+main .hoverImages .imageSelect .imageSelectItem a:hover + main .hoverImages .imgContainer img{
+    animation-name: fade !important;
+    animation-duration: 1s;
+}
+
+
+
+main .hoverImages .imgContainer{
+    width:50vw;
+    height: 100vh;
+}
+
+main .hoverImages .imgContainer img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    opacity: 0;
+    
+}
+
+.fadein{
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade{
+    0%{opacity: 0 !important;}
+    100%{opacity:1 !important;}
+}
+
+/* ////////////////////////////////////////////////////////// */
+
+/* FOOTER */
+
+/* ///////////////////////////////////////////////////////////// */
+
+footer{
+    height:15vh;
+    background-color: black;
+    color:white;
+    font-family: "Graphik Bold", Helvetica, Arial, sans-serif;
+    font-size: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 800;
+
+}
+
+footer h1{
+    letter-spacing: -2px;
+}
+
+footer ul{
+    display: flex;
+    list-style-type: none;
+    
+}
+
+footer ul a{
+    text-decoration:none;
+    font-size: 2rem;
+    color:white;
+    padding:0.5rem;
+    font-weight: 800;
+}
+
+footer ul li:hover{
+    transform: rotate(20deg);
+    transition: all .3s;
+}
+
+footer ul a:hover{
+    color:rgb(182, 178, 178);
+    transition: all .3s;
+}
+
+/* ///////////////////////////////////// */
+
+.heroImg{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    
+}
+
+.heroImgBody{
+    overflow: hidden !important;
+}
